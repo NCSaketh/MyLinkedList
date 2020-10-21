@@ -64,5 +64,15 @@ public class LinkedListMain {
         ll.print();
         System.out.println("");
 
+        //Sorting List while Adding
+        System.out.println("Sorting while adding");
+        MyLinkedList ll4=new MyLinkedList();
+        ll4.addWithSort(56);
+        ll4.addWithSort(30);
+        ll4.addWithSort(40);
+        ll4.addWithSort(70);
+        ll4.print();
+        System.out.println("");
+
     }
 }

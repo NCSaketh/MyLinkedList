@@ -113,6 +113,26 @@ public class MyLinkedList {
     }
 
 
+    public void addWithSort(int data) {
+        Node newNode = new Node(data);
+        Node presentNode = head;
+        Node beforeNode = null;
+        while(presentNode != null && data > presentNode.data)
+        {
+            beforeNode = presentNode;
+            presentNode = presentNode.nextNode;
+        }
+        // Insertion at starting of the LinkedList
+        if(beforeNode == null){
+            head = newNode;
+        }else{
+            beforeNode.nextNode = newNode;
+        }
+
+        newNode.nextNode = presentNode;
+    }
+
+
     public void print()
     {
         Node head= this.head;
