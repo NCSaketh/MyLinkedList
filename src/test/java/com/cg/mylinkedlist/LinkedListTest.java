@@ -11,7 +11,7 @@ public class LinkedListTest {
         ll.append(56);
         ll.append(30);
         ll.append(70);
-        Assert.assertTrue(ll.search(70));
+        Assert.assertTrue(ll.search(30));
     }
 
     @Test
