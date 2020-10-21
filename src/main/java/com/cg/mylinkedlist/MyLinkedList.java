@@ -34,6 +34,25 @@ public class MyLinkedList {
         }
     }
 
+    public void Insert(int prev,int data)
+    {
+        Node node=new Node(data);
+        Node temp=head;
+        while(temp.data!=prev)
+        {
+            if(temp.nextNode==null)
+            {
+                System.out.println("Previous value is not present");
+                return;
+            }
+            temp=temp.nextNode;
+        }
+
+        Node n1 = temp.nextNode;
+        temp.nextNode = node;
+        node.nextNode = n1;
+    }
+
     public void print()
     {
         Node head= this.head;

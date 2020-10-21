@@ -19,5 +19,14 @@ public class LinkedListMain {
         ll1.print();
         System.out.println("");
 
+        //add after a specific element
+        MyLinkedList ll2 = new MyLinkedList();
+        ll2.append(56);
+        ll2.append(70);
+        ll2.Insert(56,30);
+        ll2.print();
+        System.out.println("");
+
+
     }
 }
