@@ -32,7 +32,7 @@ public class LinkedListMain {
         ll2.print();
         System.out.println("");
 
-        //Poping last element
+        //Popping last element
         MyLinkedList ll3=new MyLinkedList();
         ll3.add(70);
         ll3.add(30);

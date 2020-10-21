@@ -69,6 +69,23 @@ public class MyLinkedList {
         temp=tail;
 
     }
+
+    public boolean search(int data)
+    {
+        Node temp=head;
+        while(temp!=null)
+        {
+            if(temp.data==data)
+            {
+                System.out.println("Searched and the node is found");
+                return true;
+            }
+            temp=temp.nextNode;
+        }
+        System.out.println("Searched but node not found");
+        return false;
+    }
+
     public void print()
     {
         Node head= this.head;
