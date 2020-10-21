@@ -30,4 +30,15 @@ public class LinkedListTest {
         ll.Insert(30, 40);
         Assert.assertTrue(ll.search(40));
     }
+
+    @Test
+    public void DeleteElement() {
+        ll.append(56);
+        ll.append(30);
+        ll.append(40);
+        ll.append(70);
+        ll.delete(40);
+        Assert.assertFalse(ll.search(40));
+        Assert.assertEquals(ll.size(),3);
+    }
 }

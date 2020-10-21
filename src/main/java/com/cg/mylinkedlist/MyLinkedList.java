@@ -86,12 +86,39 @@ public class MyLinkedList {
         return false;
     }
 
+    public boolean delete(int data) {
+        if (!search(data))
+        {
+            return false;
+        }
+
+        Node temp = head;
+        while (temp.nextNode.data != data)
+        {
+            temp = temp.nextNode;
+        }
+
+        temp.nextNode = temp.nextNode.nextNode;
+        return true;
+    }
+
+    public int size() {
+        Node temp = head;
+        int count = 0;
+        while (temp != null) {
+            count++;
+            temp = temp.nextNode;
+        }
+        return count;
+    }
+
+
     public void print()
     {
         Node head= this.head;
         while(head!=null)
         {
-            System.out.print(head.data+" -> ");
+            System.out.print(head.data+ " -> ");
             head=head.nextNode;
         }
     }
