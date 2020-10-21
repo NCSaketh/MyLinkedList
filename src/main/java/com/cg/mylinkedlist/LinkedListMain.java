@@ -27,6 +27,11 @@ public class LinkedListMain {
         ll2.print();
         System.out.println("");
 
+        //Deleting the first element using pop
+        ll2.pop();
+        ll2.print();
+        System.out.println("");
+
 
     }
 }

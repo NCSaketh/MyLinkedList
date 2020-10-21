@@ -53,6 +53,11 @@ public class MyLinkedList {
         node.nextNode = n1;
     }
 
+    public void pop()
+    {
+        head=head.nextNode;
+    }
+
     public void print()
     {
         Node head= this.head;
