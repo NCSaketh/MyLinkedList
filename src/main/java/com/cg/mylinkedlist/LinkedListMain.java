@@ -42,6 +42,14 @@ public class LinkedListMain {
         ll3.popLast();
         ll3.print();
         System.out.println("");
+        System.out.println("***");
+
+        //Insert 40 after 30
+        ll.print();
+        System.out.println("");
+        ll.Insert(30,40);
+        ll.print();
+        System.out.println("");
 
 
     }
